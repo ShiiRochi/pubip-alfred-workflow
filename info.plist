@@ -23,7 +23,7 @@
 	<key>createdby</key>
 	<string>Denis Bogdanenko</string>
 	<key>description</key>
-	<string>Takes ip from network interfaces</string>
+	<string>Takes local network public ip</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
@@ -118,6 +118,10 @@
 			<integer>175</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>shiirochi.io</string>
 </dict>
