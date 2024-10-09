@@ -1,12 +1,13 @@
 {
-  "name": "pubip alfred workflow",
+  "name": "alfred-pubip",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "build:wathc": "tsc -w"
   },
   "author": "",
   "license": "ISC",
