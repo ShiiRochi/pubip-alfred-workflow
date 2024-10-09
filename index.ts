@@ -1,10 +1,11 @@
-import alfy from 'alfy';
+import alfy, {ScriptFilterItem} from 'alfy';
 
 import { networkInterfaces } from "os";
 
 const nets = networkInterfaces();
 
-const results = Object.create(null); // Or just '{}', an empty object
+const results: Record<string, any> = {}; // Or just '{}', an empty object
+
 for (const name of Object.keys(nets)) {
     // @ts-ignore
     for (const net of nets[name]) {
@@ -21,7 +22,7 @@ for (const name of Object.keys(nets)) {
 }
 
 
-alfy.output(results.en0 ? [
+let output: ScriptFilterItem[] = results.en0 ? [
     {
         arg: results.en0.at(0),
         title: results.en0.at(0),
@@ -31,4 +32,6 @@ alfy.output(results.en0 ? [
         arg: "none",
         title: "Нет результата"
     }
-]);
+];
+
+alfy.output(output);
