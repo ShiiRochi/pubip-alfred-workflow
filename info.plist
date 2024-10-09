@@ -4,6 +4,8 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.shiirochi.pubip</string>
+	<key>category</key>
+	<string>Tools</string>
 	<key>connections</key>
 	<dict>
 		<key>5C19D0A6-4BE0-4030-ABF3-502A19C7072C</key>
